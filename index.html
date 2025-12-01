@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Santra - CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* gray-100 */
+        }
+
+        /* Print specific styles to ensure 1-page fit and cleaner look */
+        @media print {
+            body {
+                background-color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .no-print {
+                display: none;
+            }
+            .page {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+                max-width: 100%;
+                padding: 0;
+            }
+            /* Adjust spacing for print to fit one page */
+            h1 { font-size: 24px !important; }
+            h2 { font-size: 16px !important; margin-bottom: 4px !important; }
+            p, li { font-size: 11px !important; line-height: 1.4 !important; }
+            .section-mb { margin-bottom: 12px !important; }
+        }
+
+        .page {
+            background: white;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Instructions for user (Hidden in Print) -->
+    <div class="no-print max-w-2xl mx-auto mt-4 p-4 bg-blue-50 text-blue-800 rounded-lg text-sm text-center">
+        <p><strong></strong>  <br></p>
+    </div>
+
+    <div class="page mx-auto">
+
+        <!-- Header Section -->
+        <header class="flex flex-col md:flex-row gap-6 border-b-2 border-gray-200 pb-5 mb-5">
+            <!-- Photo (Top Left Corner) -->
+            <div class="flex-shrink-0">
+                <div class="w-32 h-32 md:w-40 md:h-40 overflow-hidden rounded-lg border-2 border-slate-700 shadow-sm relative bg-gray-200">
+                    <!-- Using the uploaded filename. If it fails, alt text shows. -->
+                    <img src="img.png" alt="Suraj Santra" class="w-full h-full object-cover" onerror="this.src='sj.jpeg'">
+                </div>
+            </div>
+
+            <!-- Name and Contact Info -->
+            <div class="flex-grow flex flex-col justify-center">
+                <h1 class="text-3xl font-bold text-slate-800 uppercase tracking-wide">Suraj Santra</h1>
+                <h2 class="text-lg font-semibold text-blue-700 mt-1">Softwear Developer</h2>
+
+                <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-y-1 gap-x-4 text-xs md:text-sm text-gray-600">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt w-4 text-center text-blue-600"></i>
+                        <span>Purba Medinipur, West Bengal, 721656</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-phone w-4 text-center text-blue-600"></i>
+                        <span>+91-7797882954</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-envelope w-4 text-center text-blue-600"></i>
+                        <a href="mailto:surajsantra399@gmail.com" class="hover:text-blue-800">surajsantra399@gmail.com</a>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fab fa-linkedin w-4 text-center text-blue-600"></i>
+                        <a href="https://www.linkedin.com/in/suraj-santra-398556242" target="_blank" class="hover:text-blue-800 underline">linkedin.com/in/suraj-santra</a>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fab fa-github w-4 text-center text-blue-600"></i>
+                        <a href="https://github.com/SURAJ587898" target="_blank" class="hover:text-blue-800 underline">github.com/SURAJ587898</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Layout Grid -->
+        <div class="grid grid-cols-12 gap-6">
+
+            <!-- Left Column (Sidebar style: 35% width) -->
+            <div class="col-span-12 md:col-span-4 space-y-5">
+
+                <!-- Education -->
+                <section>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-700 border-b border-gray-300 pb-1 mb-2">Education</h3>
+
+                    <div class="mb-3">
+                        <h4 class="font-bold text-sm text-gray-800">M.Tech in CSE (AI & DS)</h4>
+                        <p class="text-xs text-blue-700 font-medium">KIIT University, Bhubaneswar</p>
+                        <p class="text-xs text-gray-500">2025 – 2027</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <h4 class="font-bold text-sm text-gray-800">B.Tech in CSE (AI & ML)</h4>
+                        <p class="text-xs text-blue-700 font-medium">Brainware University, Kolkata</p>
+                        <p class="text-xs text-gray-500">2021 – 2025 | <span class="font-semibold text-gray-700">SGPA: 8.3</span></p>
+                    </div>
+
+                    <div class="mb-1">
+                        <h4 class="font-bold text-xs text-gray-800">Higher Secondary (12th)</h4>
+                        <p class="text-xs text-gray-600">Hanschara MD High School</p>
+                        <p class="text-xs text-gray-500">Score: 82%</p>
+                    </div>
+                </section>
+
+                <!-- Technical Skills -->
+                <section>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-700 border-b border-gray-300 pb-1 mb-2">Technical Skills</h3>
+                    <div class="space-y-2 text-xs">
+                        <div>
+                            <span class="font-bold block text-gray-700">Languages</span>
+                            <span class="text-gray-600">Python, Java, Kotlin, SQL, C</span>
+                        </div>
+                        <div>
+                            <span class="font-bold block text-gray-700">Data Science & AI</span>
+                            <span class="text-gray-600">Pandas, NumPy, Scikit-Learn, PyTorch, NLP, Computer Vision</span>
+                        </div>
+                        <div>
+                            <span class="font-bold block text-gray-700">Android Dev</span>
+                            <span class="text-gray-600">Android SDK, Jetpack, XML, Firebase, MVVM, SQLite</span>
+                        </div>
+                        <div>
+                            <span class="font-bold block text-gray-700">Tools</span>
+                            <span class="text-gray-600">Git, Docker, Databricks, Android Studio, Jupyter</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certifications -->
+                <section>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-700 border-b border-gray-300 pb-1 mb-2">Certifications</h3>
+                    <ul class="text-xs list-disc list-inside text-gray-600 space-y-1">
+                        <li>Full Stack Android Dev<br><span class="text-gray-400 text-[10px] ml-3">WebGuru Infotech</span></li>
+                        <li>Full Stack Web Dev<br><span class="text-gray-400 text-[10px] ml-3">EduFabrica Pvt Ltd</span></li>
+                    </ul>
+                </section>
+
+                <!-- Languages & Interests -->
+                <section>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-700 border-b border-gray-300 pb-1 mb-2">Languages</h3>
+                    <div class="text-xs text-gray-600 grid grid-cols-2 gap-1">
+                        <span>English (Proficient)</span>
+                        <span>Bengali (Native)</span>
+                        <span>Hindi (Conversational)</span>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Right Column (Main Content: 65% width) -->
+            <div class="col-span-12 md:col-span-8 space-y-4">
+
+                <!-- About Me -->
+                <section class="bg-blue-50 p-3 rounded-md border-l-4 border-blue-600">
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-blue-800 mb-1">About Me</h3>
+                    <p class="text-xs leading-relaxed text-gray-700 text-justify">
+                        Motivated and technically skilled M.Tech candidate specializing in Artificial Intelligence and Data Science, with a robust background in Android Application Development. My academic journey has equipped me with a deep understanding of Data Structures, Algorithms, and Machine Learning architectures. I possess hands-on experience in building complex solutions, ranging from AI-driven healthcare prediction systems to feature-rich Android applications using Kotlin and Firebase. I am proficient in Python, Java, and SQL, with a keen ability to analyze data patterns and implement scalable software solutions. Passionate about bridging the gap between theoretical AI concepts and practical, user-centric mobile applications, I am eager to leverage my diverse skill set to innovate and solve real-world technical problems efficiently.
+                    </p>
+                </section>
+
+                <!-- Key Projects -->
+                <section>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-700 border-b border-gray-300 pb-1 mb-3">Key Projects</h3>
+
+                    <!-- Project 1 -->
+                    <div class="mb-3">
+                        <div class="flex justify-between items-start">
+                            <h4 class="font-bold text-sm text-gray-800">AI-Based Multiple Disease Prediction System</h4>
+                            <span class="text-[10px] bg-gray-200 px-2 py-0.5 rounded text-gray-600">Python, ML, Streamlit</span>
+                        </div>
+                        <ul class="list-disc list-outside ml-4 mt-1 text-xs text-gray-600 leading-tight space-y-1">
+                            <li>Developed a comprehensive ML system capable of predicting multiple health conditions based on clinical patient data.</li>
+                            <li>Optimized algorithms (SVM, Logistic Regression) to achieve high accuracy in early disease detection.</li>
+                            <li>Built an interactive web interface for real-time diagnostic predictions.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="mb-3">
+                        <div class="flex justify-between items-start">
+                            <h4 class="font-bold text-sm text-gray-800">WallFlicker - Android Wallpaper App</h4>
+                            <span class="text-[10px] bg-gray-200 px-2 py-0.5 rounded text-gray-600">Kotlin, Android SDK, API</span>
+                        </div>
+                        <ul class="list-disc list-outside ml-4 mt-1 text-xs text-gray-600 leading-tight space-y-1">
+                            <li>Designed a dynamic wallpaper app allowing users to browse/set high-quality images via API integration.</li>
+                            <li>Implemented complex UI components using XML and optimized image loading for smooth performance.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="mb-3">
+                        <div class="flex justify-between items-start">
+                            <h4 class="font-bold text-sm text-gray-800">Sales Data Analysis</h4>
+                            <span class="text-[10px] bg-gray-200 px-2 py-0.5 rounded text-gray-600">Python, Pandas</span>
+                        </div>
+                        <ul class="list-disc list-outside ml-4 mt-1 text-xs text-gray-600 leading-tight space-y-1">
+                            <li>Conducted Exploratory Data Analysis (EDA) on large sales datasets to identify purchasing trends.</li>
+                            <li>Created data visualizations to interpret business metrics and optimize inventory strategies.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 4 & 5 (Condensed to save space) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div>
+                            <h4 class="font-bold text-sm text-gray-800">ChitChat - Android App</h4>
+                            <p class="text-xs text-blue-600 mb-1">Java, Firebase</p>
+                            <p class="text-xs text-gray-600 leading-tight">Built a real-time messaging app utilizing Firebase for secure user authentication and instant database updates.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-gray-800">AI Self-Driving Simulation</h4>
+                            <p class="text-xs text-blue-600 mb-1">Reinforcement Learning</p>
+                            <p class="text-xs text-gray-600 leading-tight">Developed a simulation model using RL to mimic autonomous vehicle navigation and obstacle avoidance.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Personal Details (Footer style) -->
+                <section class="pt-2 border-t border-gray-200 mt-2">
+                     <h3 class="text-sm font-bold uppercase tracking-wider text-slate-700 mb-1">Personal Details</h3>
+                     <div class="grid grid-cols-2 text-xs text-gray-600">
+                         <p><span class="font-semibold">DOB:</span> 21st February 2003</p>
+                         <p><span class="font-semibold">Hobbies:</span> Photography, Cooking, Travelling</p>
+                     </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
